@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testSuite.ToDosTest">
+        <methods>
+          <include name="launchApp"/>
+          <include name="terminateBrowser"/>
+          <include name="verify_Duplicate_TODO_item_not_get_added"/>
+          <include name="verify_SingleSpecialChar_in_TODO_item_not_get_added"/>
+        </methods>
+      </class> <!-- testSuite.ToDosTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

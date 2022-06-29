@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-29T13:19:08 CEST" name="Suite" finished-at="2022-06-29T13:20:02 CEST" duration-ms="54759">
+    <groups>
+    </groups>
+    <test started-at="2022-06-29T13:19:08 CEST" name="Test" finished-at="2022-06-29T13:20:02 CEST" duration-ms="54759">
+      <class name="testSuite.ToDosTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:08 CEST" name="launchApp" finished-at="2022-06-29T13:19:12 CEST" duration-ms="4036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="verifyUI_Header_Label()[pri:1, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:12 CEST" name="verifyUI_Header_Label" finished-at="2022-06-29T13:19:12 CEST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUI_Header_Label -->
+        <test-method signature="Verify_todo_item_should_get_added_in_the_list()[pri:2, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:12 CEST" name="Verify_todo_item_should_get_added_in_the_list" finished-at="2022-06-29T13:19:13 CEST" duration-ms="1235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_todo_item_should_get_added_in_the_list -->
+        <test-method signature="verify_functionality_of_Delete_ToDo_item()[pri:3, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:13 CEST" name="verify_functionality_of_Delete_ToDo_item" finished-at="2022-06-29T13:19:26 CEST" depends-on-methods="testSuite.ToDosTest.Verify_todo_item_should_get_added_in_the_list" duration-ms="12235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_functionality_of_Delete_ToDo_item -->
+        <test-method signature="verify_user_can_add_multiple_TODO_items_in_list()[pri:4, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:26 CEST" name="verify_user_can_add_multiple_TODO_items_in_list" finished-at="2022-06-29T13:19:29 CEST" duration-ms="3558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_user_can_add_multiple_TODO_items_in_list -->
+        <test-method signature="verify_completed_TODO_items()[pri:5, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:29 CEST" name="verify_completed_TODO_items" finished-at="2022-06-29T13:19:29 CEST" depends-on-methods="testSuite.ToDosTest.verify_user_can_add_multiple_TODO_items_in_list" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_completed_TODO_items -->
+        <test-method signature="verify_functionality_of_Clear_Completed()[pri:6, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:29 CEST" name="verify_functionality_of_Clear_Completed" finished-at="2022-06-29T13:19:29 CEST" depends-on-methods="testSuite.ToDosTest.verify_completed_TODO_items" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_functionality_of_Clear_Completed -->
+        <test-method signature="verify_functionality_of_Items_Left_count()[pri:7, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:29 CEST" name="verify_functionality_of_Items_Left_count" finished-at="2022-06-29T13:19:32 CEST" depends-on-methods="testSuite.ToDosTest.verify_functionality_of_Clear_Completed" duration-ms="2276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_functionality_of_Items_Left_count -->
+        <test-method signature="verify_revert_functionality_of_completed_TODE_item()[pri:8, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:32 CEST" name="verify_revert_functionality_of_completed_TODE_item" finished-at="2022-06-29T13:19:33 CEST" depends-on-methods="testSuite.ToDosTest.verify_functionality_of_Items_Left_count" duration-ms="1167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_revert_functionality_of_completed_TODE_item -->
+        <test-method signature="verify_Blank_or_null_TODO_item_not_get_added()[pri:9, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:33 CEST" name="verify_Blank_or_null_TODO_item_not_get_added" finished-at="2022-06-29T13:19:46 CEST" duration-ms="13508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Blank_or_null_TODO_item_not_get_added -->
+        <test-method signature="verify_Duplicate_TODO_item_not_get_added()[pri:10, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:46 CEST" name="verify_Duplicate_TODO_item_not_get_added" finished-at="2022-06-29T13:19:59 CEST" duration-ms="12308" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test Case Fail : TODOES accepting duplicate tasks expected [1] but found [2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test Case Fail : TODOES accepting duplicate tasks expected [1] but found [2]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at testSuite.ToDosTest.verify_Duplicate_TODO_item_not_get_added(ToDosTest.java:213)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Duplicate_TODO_item_not_get_added -->
+        <test-method signature="verify_SingleSpecialChar_in_TODO_item_not_get_added()[pri:11, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:19:59 CEST" name="verify_SingleSpecialChar_in_TODO_item_not_get_added" finished-at="2022-06-29T13:20:02 CEST" duration-ms="3455" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test Case Fail : TODOES accepting taks with special char only expected [0] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test Case Fail : TODOES accepting taks with special char only expected [0] but found [1]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at testSuite.ToDosTest.verify_SingleSpecialChar_in_TODO_item_not_get_added(ToDosTest.java:239)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SingleSpecialChar_in_TODO_item_not_get_added -->
+        <test-method is-config="true" signature="terminateBrowser()[pri:0, instance:testSuite.ToDosTest@49049a04]" started-at="2022-06-29T13:20:02 CEST" name="terminateBrowser" finished-at="2022-06-29T13:20:02 CEST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- testSuite.ToDosTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
